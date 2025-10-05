@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Navbar on scrolling
+    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
             $('.navbar').fadeIn('slow').css('display', 'flex');
@@ -11,7 +11,7 @@
     });
 
 
-    // Smooth scrolling on the navbar links
+  
     $(".navbar-nav a, .btn-scroll").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -28,7 +28,7 @@
     });
 
 
-    // Scroll to Bottom
+    
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scroll-to-bottom').fadeOut('slow');
@@ -38,7 +38,7 @@
     });
 
 
-    // Portfolio isotope and filter
+    
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
@@ -51,7 +51,7 @@
     });
     
     
-    // Back to top button
+   
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
             $('.back-to-top').fadeIn('slow');
@@ -65,7 +65,7 @@
     });
 
 
-    // Gallery carousel
+    
     $(".gallery-carousel").owlCarousel({
         autoplay: false,
         smartSpeed: 1500,
@@ -96,7 +96,7 @@
     });
 
 
-    // Testimonials carousel
+    
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -111,4 +111,5 @@
     });
     
 })(jQuery);
+
 
